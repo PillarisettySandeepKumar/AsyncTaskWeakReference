@@ -14,7 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        AsyncTaskExample(this).execute(10)
+        btnTask.setOnClickListener {
+
+            AsyncTaskExample(this).execute(10)
+
+        }
+
     }
 
     companion object{
